@@ -1,0 +1,11 @@
+Join ex
+1) SELECT * , degrees.name FROM `students` JOIN degrees ON students.id = degrees.id AND degrees.name = "Corso di laurea in Economia";
+2) SELECT departments.id, departments.name , degrees.name FROM `departments` JOIN degrees ON departments.id = degrees.id AND LEVEL = "Magistrale" WHERE departments.name ="Dipartimento di Neuroscienze";
+3) SELECT teachers.id, teachers.name, courses.name FROM teachers JOIN courses ON teachers.id = courses.id WHERE teachers.id ="44";
+5) SELECT degrees.name, degrees.level, teachers.name, teachers.surname FROM `degrees`JOIN teachers ON degrees.id = teachers.id;
+6) SELECT teachers.name, teachers.surname , departments.nameFROM `teachers`JOIN `departments`ON teachers.id = departments.id WHERE departments.name ="Dipartimento di Matematica";
+
+EX group By
+1)SELECT COUNT(students.name) FROM `students` GROUP BY enrolment_date;
+2)SELECT COUNT(teachers.name) FROM `teachers` GROUP BY office_address;
+3)
